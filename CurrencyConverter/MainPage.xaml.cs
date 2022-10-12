@@ -2,24 +2,36 @@
 
 public partial class MainPage : ContentPage
 {
-	int count = 0;
 
 	public MainPage()
 	{
 		InitializeComponent();
+        
+
+		LabelDate.Text = "Курс на " + DP.Date.ToString("d");
 	}
 
-	private void OnCounterClicked(object sender, EventArgs e)
-	{
-		count++;
+    private void GetValCurs()
+    {
+        
+    }
 
-		if (count == 1)
-			CounterBtn.Text = $"Clicked {count} time";
-		else
-			CounterBtn.Text = $"Clicked {count} times";
+    void DateSelected(System.Object sender, Microsoft.Maui.Controls.DateChangedEventArgs e)
+    {
+		LabelDate.Text = "Курс на " + e.NewDate.ToString("d");
+    }
 
-		SemanticScreenReader.Announce(CounterBtn.Text);
-	}
+    void PickerSelectedIndexChanged(System.Object sender, System.EventArgs e)
+    {
+    }
+
+    void EntryTextChanged_1(System.Object sender, Microsoft.Maui.Controls.TextChangedEventArgs e)
+    {
+    }
+
+    void EntryTextChanged_2(System.Object sender, Microsoft.Maui.Controls.TextChangedEventArgs e)
+    {
+    }
 }
 
 
