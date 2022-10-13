@@ -1,94 +1,90 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="CurrencyConverter.MainPage"
-             Title="Home">
-    
-    <StackLayout>
+             x:Class="CurrencyConverter.MainPage">
 
-        <Label
-            Padding="25"/>
-
-        <Label
-            Text="Currency Converter"
-            FontSize="30"
-            HorizontalOptions="Center"/>
-
-        <Label
-            Padding="10"/>
-        <HorizontalStackLayout
-            HorizontalOptions="End">
-            <Label
-                x:Name="label"
-                Text="Дата"
-                VerticalOptions="Center"/>
-             <DatePicker
-                x:Name="DP"
-                DateSelected="DateSelected"
-                Margin="15"
-                Format="d">
-            </DatePicker>
-        </HorizontalStackLayout>
-
-        <Label
-            x:Name="LabelDate"
-            HorizontalOptions="End"
-            Margin="15"/>
-
-        <Label
-            Padding="15"/>
-
-        <FlexLayout
-            Margin="15"
-            JustifyContent="SpaceBetween">
-            <Picker
-                x:Name="languagePicker_1"
-                Title = "Выберите валюту"
-                SelectedIndexChanged="PickerSelectedIndexChanged"
-                HeightRequest="35"
-                WidthRequest="200">
-
-                <Picker.Items>
-                    <x:String>C#</x:String>
-                    <x:String>JavaScript</x:String>
-                    <x:String>Java</x:String>
-                </Picker.Items>
-            </Picker>
-
-            <Entry
+        <StackLayout> 
+ 
+        <Label 
+            Padding="25"/> 
+ 
+        <Label 
+            Text="Currency Converter" 
+            FontSize="30" 
+            HorizontalOptions="Center"/> 
+ 
+        <Label 
+            Padding="10"/> 
+        <HorizontalStackLayout 
+            HorizontalOptions="End"> 
+            <Label 
+                x:Name="label" 
+                Text="Дата" 
+                VerticalOptions="Center"/> 
+             <DatePicker 
+                x:Name="DP" 
+                DateSelected="DateSelected" 
+                Margin="15" 
+                Format="d"> 
+            </DatePicker> 
+        </HorizontalStackLayout> 
+ 
+        <Label 
+            x:Name="LabelDate" 
+            HorizontalOptions="End" 
+            Margin="15"/> 
+ 
+        <Label 
+            Padding="15"/> 
+ 
+        <FlexLayout 
+            Margin="15" 
+            JustifyContent="SpaceBetween"> 
+            <Picker 
+                x:Name="Curs_1"
+                Title = "Выберите валюту" 
+                SelectedIndexChanged="PickerSelectedIndexChanged" 
+                HeightRequest="35" 
+                WidthRequest="200"> 
+            </Picker> 
+ 
+            <Entry 
                 x:Name="EntryNote_1"
-                TextChanged="EntryTextChanged_1"
+                TextChanged="EntryTextChanged_1" 
                 FontSize="Default"
-                WidthRequest="130"
+                Text="{Binding }"
+                WidthRequest="130" 
                 ClearButtonVisibility="WhileEditing"/>
-        </FlexLayout>
 
-        <FlexLayout
-            Margin="15"
-            JustifyContent="SpaceBetween">
-            <Picker
-                x:Name="languagePicker_2"
-                Title = "Выберите валюту"
-                SelectedIndexChanged="PickerSelectedIndexChanged"
-                HeightRequest="35"
-                WidthRequest="200">
-
-                <Picker.Items>
-                    <x:String>C#</x:String>
-                    <x:String>JavaScript</x:String>
-                    <x:String>Java</x:String>
-                </Picker.Items>
-            </Picker>
-
-            <Entry
-                x:Name="EntryNote_2"
+        </FlexLayout> 
+ 
+        <FlexLayout 
+            Margin="15" 
+            JustifyContent="SpaceBetween"> 
+            <Picker 
+                x:Name="Curs_2" 
+                Title = "Выберите валюту" 
+                SelectedIndexChanged="PickerSelectedIndexChanged" 
+                HeightRequest="35" 
+                WidthRequest="200"> 
+            </Picker> 
+ 
+            <Entry 
+                x:Name="EntryNote_2" 
                 TextChanged="EntryTextChanged_2"
-                FontSize="Default"
-                WidthRequest="130"
-                ClearButtonVisibility="WhileEditing"/>
-        </FlexLayout>
+                FontSize="Default" 
+                WidthRequest="130" 
+                ClearButtonVisibility="WhileEditing"/> 
+        </FlexLayout> 
+ 
+            <Label 
+                x:Name="xml_Label"
+                BackgroundColor="AntiqueWhite"/> 
+             
+   
+ 
+    </StackLayout> 
 
-    </StackLayout>
 
 </ContentPage>
 
