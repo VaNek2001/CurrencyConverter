@@ -43,7 +43,7 @@
             <Picker 
                 x:Name="Curs_1"
                 Title = "Выберите валюту" 
-                SelectedIndexChanged="PickerSelectedIndexChanged" 
+                SelectedIndexChanged="PickerSelectedIndexChanged_1" 
                 HeightRequest="35" 
                 WidthRequest="200"> 
             </Picker> 
@@ -64,7 +64,7 @@
             <Picker 
                 x:Name="Curs_2" 
                 Title = "Выберите валюту" 
-                SelectedIndexChanged="PickerSelectedIndexChanged" 
+                SelectedIndexChanged="PickerSelectedIndexChanged_2" 
                 HeightRequest="35" 
                 WidthRequest="200"> 
             </Picker> 
